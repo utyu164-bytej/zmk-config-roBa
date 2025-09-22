@@ -65,18 +65,6 @@
         };
     };
 
-        my_macro_1: my_macro_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            label = "MY_MACRO_1";
-            tap-ms = <10>;
-            bindings = <
-                &kp 1 // 1 を押す
-                &macro_pause 500 // 500ミリ秒待つ
-                &kp 6 // 6 を押す
-        };
-    };
-
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
