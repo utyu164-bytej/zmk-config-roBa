@@ -141,7 +141,7 @@
 
         MOUSE {
             bindings = <
-&kp LA(F4)  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&kp RA(F4)  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
 &trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB5  &trans
 &trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &mkp MB4  &trans
 &trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
