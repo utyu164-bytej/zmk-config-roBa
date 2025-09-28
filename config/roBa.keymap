@@ -92,6 +92,12 @@
             tap-ms = <20>;
         };
 
+        loop: loop {
+            compatible = "zmk,behavior-key-toggle";
+            label = "LOOP";
+            #binding-cells = <1>;
+        };
+
         multi_tap_tab_bspc: behavior_multi_tap {
             label = "MT_TAB_BSPC";
             #binding-cells = <0>;
