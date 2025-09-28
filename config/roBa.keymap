@@ -69,6 +69,16 @@
             bindings = <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_4 &kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_4 &kp AT_SIGN &kp AT_SIGN &kp U &kp LS(T) &kp LS(Y) &kp LS(U) &kp ENTER>;
             label = "NEW_MACRO";
         };
+
+        Germ_N: Germ_N {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp N &kp RIGHT &kp DOWN &kp LEFT_ARROW>;
+
+            label = "GERM_N";
+        };
     };
 
     behaviors {
