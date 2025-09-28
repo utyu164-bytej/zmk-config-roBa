@@ -63,13 +63,13 @@
             label = "TO_LAYER_0";
         };
 
-        new_macro: new_macro {
+        pass: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&none>,
                 <&macro_press>,
-                <&kp J &kp I &kp J &kp I &kp J &kp I &kp J &kp I>;
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_4 &kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_4 &kp AT_SIGN &kp AT_SIGN &kp U &kp LA(T) &kp LA(Y) &kp LA(U) &kp ENTER>;
 
             label = "NEW_MACRO";
         };
@@ -114,7 +114,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                               &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
 &trans  &trans  &trans  &trans  &trans  &trans      &kp F13          &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &new_macro       &trans  &trans  &trans  &trans  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &pass            &trans  &trans  &trans  &trans  &kp F11
 &trans  &trans  &trans  &trans  &trans  &trans      &kp PRINTSCREEN  &trans                          &kp F12
             >;
         };
