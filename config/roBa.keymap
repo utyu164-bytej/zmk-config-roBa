@@ -55,6 +55,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        alt {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <36 10>;
+        };
     };
 
     macros {
@@ -152,10 +157,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R        &kp T                                        &kp Y        &kp U  &lt 5 I    &kp O    &lt 5 P
-&kp A             &kp S         &kp D         &kp F        &kp G        &kp ESCAPE       &kp PLUS       &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &kp TAB          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 LANG2  &lt 2 SPACE  &lt 3 LANG1      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q                             &kp W         &kp E         &kp R        &kp T                                        &kp Y        &kp U  &lt 5 I    &kp O    &lt 5 P
+&kp A                             &kp S         &kp D         &kp F        &kp G        &kp ESCAPE       &kp PLUS       &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt_exit_AML_on_tap LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &kp TAB          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 LANG2  &lt 2 SPACE  &lt 3 LANG1      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
