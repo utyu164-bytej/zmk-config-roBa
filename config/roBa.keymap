@@ -25,9 +25,7 @@
     // };
 };
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 4 250>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer 4 250>; };
 
 / {
     combos {
@@ -129,6 +127,7 @@
             max-taps = <2>;
             max-tap-interrupt-ms = <250>;
         };
+
         tog_off: toggle_layer_off {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
@@ -182,10 +181,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &kp LC(HOME)  &trans          &kp UP_ARROW    &trans           &kp LS(LC(END))
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &kp HOME      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans        &trans          &trans          &trans           &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                         &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                              &kp LC(HOME)  &kp LC(PAGE_UP)  &kp UP_ARROW    &kp LC(PAGE_DOWN)  &kp LS(LC(END))
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &kp LC(LS(L))  &kp HOME      &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp LC(C)
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans         &trans        &trans           &trans          &trans             &kp LC(V)
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans         &trans                                                            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -202,10 +201,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                          &trans  &trans           &trans  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &kp LC(LS(TAB))  &trans  &kp LC(TAB)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans      &trans  &trans           &trans  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &kp LC(F4)  &kp F5                                        &trans
             >;
         };
 
