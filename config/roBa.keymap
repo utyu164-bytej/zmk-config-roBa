@@ -72,9 +72,9 @@ muhennkann {
 
     macros {
 to_layer_0: to_layer_0 {
-    compatible = "zmk,behavior-toggle-layer";
+    compatible = "zmk,behavior-macro-one-param";
     #binding-cells = <1>;
-    toggle-mode = "on";
+    bindings = <&to 0>;
     label = "TO_LAYER_0";
 };
 
