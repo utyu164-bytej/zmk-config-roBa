@@ -10,6 +10,7 @@
 };
 
 &zip_temp_layer {
+    #binding-cells = <2>;
     excluded-positions = <18 19 21 34>; // J, K, ;, Ctrlなど
 };
 
