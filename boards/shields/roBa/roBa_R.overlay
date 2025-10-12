@@ -12,6 +12,7 @@
             , <&xiao_d 7 GPIO_ACTIVE_HIGH>
             , <&gpio0 10 GPIO_ACTIVE_HIGH>
             ;
+};
 
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
