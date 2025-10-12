@@ -71,12 +71,12 @@ muhennkann {
     };
 
     macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to>;
-            label = "TO_LAYER_0";
-        };
+to_layer_0: to_layer_0 {
+    compatible = "zmk,behavior-toggle-layer";
+    #binding-cells = <1>;
+    toggle-mode = "on";
+    label = "TO_LAYER_0";
+};
 
         pass: new_macro {
             compatible = "zmk,behavior-macro";
