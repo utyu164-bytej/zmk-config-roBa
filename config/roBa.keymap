@@ -55,8 +55,13 @@
         };
 
         alt_tab {
-            bindings = <&kp LA(TAB)>;
+            bindings = <&kp LA(LEFT_WIN)>;
             key-positions = <10 36>;
+        };
+
+        close {
+            bindings = <&kp LA(F4)>;
+            key-positions = <0 1>;
         };
     };
 
