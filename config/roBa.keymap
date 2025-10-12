@@ -53,6 +53,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        alt_tab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <10 36>;
+        };
     };
 
     macros {
