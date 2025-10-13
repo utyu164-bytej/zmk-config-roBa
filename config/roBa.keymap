@@ -8,14 +8,9 @@
     quick-tap-ms = <0>;
 };
 
-/ {
-    encoder0: encoder0 {
-        compatible = "zmk,rotary-encoder";
-        label = "Left Encoder";
-        a-gpios = <&gpio0 6 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-        b-gpios = <&gpio0 7 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-        sensor-bindings = <&scroll_up_down>;
-    };
+encoder0: encoder0 {
+    compatible = "your,encoder-compatible";
+    /* encoder configuration */
 };
 
 &trackball {
