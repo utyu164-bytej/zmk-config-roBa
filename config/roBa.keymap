@@ -73,6 +73,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
+
+        smart {
+            bindings = <&to 7>;
+            key-positions = <9 42>;
+        };
     };
 
     macros {
@@ -183,10 +188,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                        &trans     &kp F5           &trans  &kp LC(F4)   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans     &kp LS(LC(TAB))  &trans  &kp LC(TAB)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans    &trans     &trans           &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &kp LEFT  &kp RIGHT                                        &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &kp F5           &trans  &kp LC(F4)   &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LS(LC(TAB))  &trans  &kp LC(TAB)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans           &trans  &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                        &trans
             >;
         };
 
@@ -201,10 +206,10 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &Germ_N  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
