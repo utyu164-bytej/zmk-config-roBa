@@ -8,6 +8,10 @@
     quick-tap-ms = <0>;
 };
 
+&encoder0 {
+    sensor-bindings = <&scroll_up_down>;
+};
+
 &trackball {
     automouse-layer = <4>;
     scroll-layers = <5>;
