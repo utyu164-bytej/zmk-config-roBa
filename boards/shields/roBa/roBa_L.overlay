@@ -14,3 +14,13 @@
 &left_encoder {
     status = "okay";
 };
+/ {
+    encoder0: encoder0 {
+        compatible = "zmk,rotary-encoder";
+        label = "Rotary Encoder";
+        a-gpios = <&xiao_d 5 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        b-gpios = <&xiao_d 0 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+        steps = <12>;  // 4でも可。回転のスムーズさで調整
+        resolution = <1>;
+    };
+};
