@@ -126,13 +126,3 @@
         reg = <0>;
     };
 };
-/ {
-    encoder0: encoder0 {
-        compatible = "zmk,rotary-encoder";
-        label = "Rotary Encoder";
-        a-gpios = <&xiao_d 5 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-        b-gpios = <&xiao_d 0 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-        steps = <4>;
-        resolution = <1>;
-    };
-};
