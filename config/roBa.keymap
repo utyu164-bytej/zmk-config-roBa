@@ -61,12 +61,17 @@
 
         close {
             bindings = <&kp LA(F4)>;
-            key-positions = <0 1>;
+            key-positions = <5 6>;
         };
 
         printscreen {
             bindings = <&kp PRINTSCREEN>;
             key-positions = <5 6>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
         };
     };
 
