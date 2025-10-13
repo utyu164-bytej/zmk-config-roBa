@@ -8,9 +8,7 @@
     quick-tap-ms = <0>;
 };
 
-&encoder0 {
-    sensor-bindings = <&scroll_up_down>;
-};
+&encoder0 { sensor-bindings = <&scroll_up_down>; };
 
 &trackball {
     automouse-layer = <4>;
@@ -139,7 +137,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 LANG2  &lt 2 SPACE  &lt 3 LANG1      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
