@@ -66,7 +66,7 @@
 
         printscreen {
             bindings = <&kp PRINTSCREEN>;
-            key-positions = <5 6>;
+            key-positions = <8 9>;
         };
 
         esc {
