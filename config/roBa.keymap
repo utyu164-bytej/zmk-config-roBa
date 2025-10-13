@@ -9,7 +9,7 @@
 };
 
 &encoder0 {
-    // encoder configuration
+    sensor-bindings = <&scroll_up_down>;
 };
 
 &trackball {
