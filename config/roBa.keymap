@@ -73,11 +73,6 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
-
-        smart {
-            bindings = <&to 7>;
-            key-positions = <9 42>;
-        };
     };
 
     macros {
