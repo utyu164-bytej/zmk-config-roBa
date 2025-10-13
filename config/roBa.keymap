@@ -8,9 +8,8 @@
     quick-tap-ms = <0>;
 };
 
-encoder0: encoder0 {
-    compatible = "your,encoder-compatible";
-    /* encoder configuration */
+&encoder0 {
+    // encoder configuration
 };
 
 &trackball {
