@@ -54,7 +54,7 @@
             key-positions = <24 25>;
         };
 
-        alt_tab {
+        alt_win {
             bindings = <&kp LA(LEFT_WIN)>;
             key-positions = <4 3>;
         };
