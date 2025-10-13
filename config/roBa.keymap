@@ -29,13 +29,13 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
+        cont_v {
+            bindings = <&kp LC(V)>;
             key-positions = <11 12>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
+        cont_c {
+            bindings = <&kp LC(C)>;
             key-positions = <12 13>;
         };
 
