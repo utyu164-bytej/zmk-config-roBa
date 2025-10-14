@@ -73,6 +73,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
         };
+
+        contalt_v {
+            bindings = <&kp LC(LA(V))>;
+            key-positions = <11 12 13>;
+        };
     };
 
     macros {
