@@ -119,6 +119,20 @@
             bindings = <&kp LEFT_ALT &kp A &kp P>;
             label = "DUPLICATION";
         };
+
+        sort: sort {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp H &kp S &kp S>;
+            label = "SORT";
+        };
+
+        window: window {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp W &kp F &kp F>;
+            label = "WINDOW";
+        };
     };
 
     behaviors {
