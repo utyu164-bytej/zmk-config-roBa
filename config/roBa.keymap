@@ -75,7 +75,7 @@
         };
 
         contalt_v {
-            bindings = <&kp LC(LA(V))>;
+            bindings = <&paste_txit>;
             key-positions = <11 12 13>;
         };
     };
