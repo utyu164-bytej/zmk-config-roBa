@@ -109,7 +109,8 @@
         paste_txit: paste_txit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LA(V)) &kp V>;
+            bindings = <&kp LC(LA(V)) &kp V &kp ENTER>, <&macro_wait_time 255>;
+
             label = "PASTE_TXIT";
         };
 
