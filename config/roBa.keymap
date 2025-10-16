@@ -137,6 +137,13 @@
             bindings = <&kp LEFT_ALT &kp W &kp F &kp F>;
             label = "WINDOW";
         };
+
+        caps_num: caps_num {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CAPS &kp KP_NUM>;
+            label = "CAPS_NUM";
+        };
     };
 
     behaviors {
