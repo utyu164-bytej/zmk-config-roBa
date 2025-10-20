@@ -163,7 +163,7 @@
         caps_num: caps_num {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp CAPS &kp KP_NUMLOCK>;
+            bindings = <&kp LS(CAPS) &kp KP_NUMLOCK>;
             label = "CAPS_NUM";
         };
     };
