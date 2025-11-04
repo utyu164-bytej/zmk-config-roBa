@@ -77,12 +77,12 @@
 
         close {
             bindings = <&kp LA(F4)>;
-            key-positions = <5 6>;
+            key-positions = <9 8>;
         };
 
         printscreen {
             bindings = <&kp PRINTSCREEN>;
-            key-positions = <8 9>;
+            key-positions = <5 6>;
         };
 
         esc {
