@@ -160,7 +160,7 @@
         sort: sort {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp H &kp S &kp S>;
+            bindings = <&kp LEFT_ALT &kp H &kp S &kp U>;
             label = "SORT";
         };
 
