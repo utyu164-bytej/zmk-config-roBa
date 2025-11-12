@@ -241,7 +241,7 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(PAGE_UP))     &kp UP_ARROW    &kp LC(PAGE_DOWN)        &trans                        &Duplication   &kp LC(HOME)            &kp LC(LS(UP_ARROW))    &kp LC(LS(END))          &kp LS(F3)
+&kp ESCAPE      &kp PAGE_UP             &kp UP_ARROW    &kp PAGE_DOWN            &trans                        &Duplication   &kp LC(HOME)            &kp LC(LS(UP_ARROW))    &kp LC(LS(END))          &kp LS(F3)
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &sort    &kp LC(LS(L))  &kp LC(LS(LEFT_ARROW))  &kp LC(LS(DOWN_ARROW))  &kp LC(LS(RIGHT_ARROW))  &trans
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &window  &trans         &trans                  &trans                  &trans                   &trans
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans   &trans                                                                                  &trans
