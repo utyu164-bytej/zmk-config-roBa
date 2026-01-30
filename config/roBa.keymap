@@ -177,6 +177,13 @@
             bindings = <&kp LS(CAPS) &kp KP_NUMLOCK>;
             label = "CAPS_NUM";
         };
+
+        AutoFilter: AutoFilter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(END)) &kp LS(LC(L)) &kp RIGHT>;
+            label = "AUTOFILTER";
+        };
     };
 
     behaviors {
