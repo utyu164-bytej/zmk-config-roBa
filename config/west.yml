@@ -14,3 +14,7 @@ manifest:
       revision: main
   self:
     path: config
+- name: seeeduino_xiao_ble
+  url: https://github.com/zmkcommunity/seeeduino_xiao_ble
+  revision: main
+  path: modules/seeeduino_xiao_ble
