@@ -4,17 +4,23 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: kumamuk-git
       url-base: https://github.com/kumamuk-git
+    - name: zmkcommunity
+      url-base: https://github.com/zmkcommunity
+
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+
     - name: zmk-pmw3610-driver
       remote: kumamuk-git
       revision: main
+
+    - name: seeeduino_xiao_ble
+      remote: zmkcommunity
+      revision: main
+      path: modules/seeeduino_xiao_ble
+
   self:
     path: config
-- name: seeeduino_xiao_ble
-  url: https://github.com/zmkcommunity/seeeduino_xiao_ble
-  revision: main
-  path: modules/seeeduino_xiao_ble
