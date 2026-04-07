@@ -17,10 +17,5 @@ manifest:
       remote: kumamuk-git
       revision: main
 
-    - name: seeeduino_xiao_ble
-      remote: zmkcommunity
-      revision: main
-      path: modules/seeeduino_xiao_ble
-
   self:
     path: config
