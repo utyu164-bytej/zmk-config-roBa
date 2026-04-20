@@ -3,6 +3,7 @@ id: roBa
 name: roBa
 type: shield
 url: https://github.com/kumamuk-git/zmk-config-roBa
-requires: [xiao_ble/zmk]
+requires: [xiao_ble/nrf52840/zmk]
 features:
   - keys
+``
