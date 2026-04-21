@@ -14,10 +14,13 @@
 #undef MOVE_LEFT
 #undef MOVE_RIGHT
 
-#define MOVE_UP MOVE_VERT(U_MOUSE_MOVE_MAX)
-#define MOVE_DOWN MOVE_VERT(-U_MOUSE_MOVE_MAX)
-#define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
-#define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
+/* 上下だけ反転（Y反転） */
+#define MOVE_UP    MOVE_VERT( U_MOUSE_MOVE_MAX)
+#define MOVE_DOWN  MOVE_VERT(-U_MOUSE_MOVE_MAX)
+
+/* 左右はそのまま（すでにOK） */
+#define MOVE_LEFT  MOVE_HOR(-U_MOUSE_MOVE_MAX)
+#define MOVE_RIGHT MOVE_HOR( U_MOUSE_MOVE_MAX)
 
 &mt {
     flavor = "balanced";
