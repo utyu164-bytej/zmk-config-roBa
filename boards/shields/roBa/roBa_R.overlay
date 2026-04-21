@@ -65,7 +65,7 @@ trackball: trackball@0 {
     zephyr,axis-y = <0>; /* Y */
 
     invert-y;
-    /* invert-x; */
+    invert-x;
 
 
     label = "PMW3610";
