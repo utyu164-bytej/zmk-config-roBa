@@ -64,7 +64,7 @@ trackball: trackball@0 {
     zephyr,axis-x = <1>; /* X */
     zephyr,axis-y = <0>; /* Y */
 
-    invert-y;
+    /* invert-y; */
     invert-x;
 
 
