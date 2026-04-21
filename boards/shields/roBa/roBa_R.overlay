@@ -61,11 +61,11 @@ trackball: trackball@0 {
     motion-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
 
-    zephyr,axis-x = <1>; /* X */
-    zephyr,axis-y = <0>; /* Y */
+    zephyr,axis-x = <0>; /* X */
+    zephyr,axis-y = <1>; /* Y */
 
-    invert-y;            /* 上下が逆なら残す */
-    /* invert-x;         ← まずは外す */
+    invert-y;
+    invert-x;
 
 
     label = "PMW3610";
