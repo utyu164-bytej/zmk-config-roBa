@@ -15,12 +15,30 @@
 };
 
 / {
-    trackball_listener {
-        status = "okay";
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-        input-processors = <&zip_temp_layer 4 10000>;
+  trackball_listener {
+    status = "okay";
+    compatible = "zmk,input-listener";
+    device = <&trackball>;
+
+    /* AML: トラックボール入力で Layer 4(MOUSE) を一時的にON */
+    input-processors = <&zip_aml 4 10000>;
+
+    /* スクロールLayer(5)の時だけ、XYをスクロールに変換 */
+    scroller {
+      layers = <5>;
+      input-processors = <
+        &zip_xy_to_scroll_mapper
+        &zip_scroll_scaler 1 6
+      >;
     };
+  };
+
+  /* AML用：除外キーつき temp-layer（必要なら excluded-positions を調整） */
+  zip_aml: zip_aml {
+    compatible = "zmk,input-processor-temp-layer";
+    #input-processor-cells = <2>;
+    excluded-positions = <16 17 18>;
+  };
 };
 
 / {
