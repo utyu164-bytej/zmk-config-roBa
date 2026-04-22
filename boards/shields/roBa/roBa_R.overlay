@@ -40,7 +40,7 @@ scroller {
   zip_aml: zip_aml {
     compatible = "zmk,input-processor-temp-layer";
     #input-processor-cells = <2>;
-    excluded-positions = <16 17 18>;
+    excluded-positions = <18 20>;
   };
 };
 
