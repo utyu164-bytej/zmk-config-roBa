@@ -46,7 +46,6 @@ scroller {
     #input-processor-cells = <2>;
     excluded-positions = <16 17>;
   };
-};
 
 &pinctrl {
     spi0_default: spi0_default {
