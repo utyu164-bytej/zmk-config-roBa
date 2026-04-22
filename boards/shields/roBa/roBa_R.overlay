@@ -2,32 +2,19 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
-&default_transform {
-    col-offset = <6>;
-};
-
-&kscan0 {
-    col-gpios =
-        <&xiao_d 10 GPIO_ACTIVE_HIGH>,
-        <&xiao_d 9 GPIO_ACTIVE_HIGH>,
-        <&xiao_d 8 GPIO_ACTIVE_HIGH>,
-        <&xiao_d 7 GPIO_ACTIVE_HIGH>,
-        <&gpio0 10 GPIO_ACTIVE_HIGH>;
-};
-
 / {
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        /* ✅ 通常マウス：サクサク + AML */
+        /* 通常マウス：サクサク + AML */
         input-processors = <
             &zip_xy_scaler 1 2
             &zip_aml 4 3000
         >;
 
-        /* ✅ スクロールLayer(5)：縦優先＋横デッドゾーン */
+        /* スクロールLayer(5)：縦優先＋横デッドゾーン */
         scroller {
             layers = <5>;
             input-processors = <
@@ -41,7 +28,7 @@
         };
     };
 
-    /* ✅ AML 用 temp-layer（除外なし） */
+    /* AML本体（除外なし＝右クリック安全） */
     zip_aml: zip_aml {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
