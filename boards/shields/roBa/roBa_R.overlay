@@ -25,15 +25,19 @@
     input-processors = <&zip_aml 4 10000>;
 
     /* スクロールLayer(5)の時だけ、XYをスクロールに変換 */
+
 scroller {
   layers = <5>;
   input-processors = <
     &zip_xy_to_scroll_mapper
-    &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) 
+    &zip_scroll_transform (
+        INPUT_TRANSFORM_Y_INVERT |
+        INPUT_TRANSFORM_X_DEADZONE
+    )
     &zip_scroll_scaler 1 12
+  >;
+};
 
-      >;
-    };
   };
 
   /* AML用：除外キーつき temp-layer（必要なら excluded-positions を調整） */
