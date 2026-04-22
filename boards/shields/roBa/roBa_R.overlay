@@ -48,12 +48,6 @@ scroller {
   };
 };
 
-/ {
-    zip_temp_layer: zip_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-        excluded-positions = <16 17 18>; /* 例：J K L を除外 */
-    };
 };
 
 &pinctrl {
