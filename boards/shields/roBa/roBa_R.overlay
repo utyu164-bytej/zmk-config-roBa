@@ -99,6 +99,10 @@ trackball: trackball@0 {
     invert-x;
 
 
+    /* ★追加：CPI（感度）を下げる（200刻み、200〜3200） */
+    res-cpi = <600>;
+
+
     label = "PMW3610";
 };
 };
