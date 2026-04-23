@@ -15,10 +15,12 @@
 #undef MOVE_RIGHT
 
 /* 上下だけ反転（Y反転） */
+
 #define MOVE_UP    MOVE_VERT( U_MOUSE_MOVE_MAX)
 #define MOVE_DOWN  MOVE_VERT(-U_MOUSE_MOVE_MAX)
 
 /* 左右はそのまま（すでにOK） */
+
 #define MOVE_LEFT  MOVE_HOR(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_HOR( U_MOUSE_MOVE_MAX)
 
@@ -27,17 +29,17 @@
     quick-tap-ms = <0>;
 };
 
-    // arrows {
-    //     layers = <3>;
-    //     bindings =
-    //         <&kp RIGHT_ARROW>,
-    //         <&kp LEFT_ARROW>,
-    //         <&kp UP_ARROW>,
-    //         <&kp DOWN_ARROW>;
-    //     tick = <10>;
-    //     wait-ms = <5>;
-    //     tap-ms = <5>;
-    // };
+// arrows {
+//     layers = <3>;
+//     bindings =
+//         <&kp RIGHT_ARROW>,
+//         <&kp LEFT_ARROW>,
+//         <&kp UP_ARROW>,
+//         <&kp DOWN_ARROW>;
+//     tick = <10>;
+//     wait-ms = <5>;
+//     tap-ms = <5>;
+// };
 
 / {
     combos {
@@ -179,7 +181,7 @@
         AutoFilter: AutoFilter {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(END)) &kp LS(LC(L)) &kp RIGHT>;
+            bindings = <&kp LC(LS(END)) &kp LS(LC(L)) &kp LEFT>;
             label = "AUTOFILTER";
         };
     };
