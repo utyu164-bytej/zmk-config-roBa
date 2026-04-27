@@ -13,5 +13,12 @@ manifest:
       revision: main
       import: app/west.yml
 
+    # ★ここから追加：自作behaviorモジュール
+    - name: zmk-behavior-seq-loop
+      remote: yourgithub
+      revision: main
+      path: modules/zmk-behavior-seq-loop
+
+
   self:
     path: config
