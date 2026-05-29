@@ -101,7 +101,7 @@
         
         steps = <24>;  // 値を12から24へ変更
         
-        status = "disabled";
+        status = "okay";
     };
 
 
