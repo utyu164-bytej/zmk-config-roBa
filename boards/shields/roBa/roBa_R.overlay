@@ -15,6 +15,10 @@
         <&gpio0 10 GPIO_ACTIVE_HIGH>;
 };
 
+&left_encoder {
+    status = "disabled";
+};
+
 / {
   trackball_listener {
     status = "okay";
